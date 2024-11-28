@@ -1,0 +1,48 @@
+
+<html>
+<head>
+   
+    <title>Restaurant Catering :</title>
+   
+</head>
+<body>
+    <div >
+        <h1>Restaurant Catering Inquiry</h1>
+        <form action="/submit-catering" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            
+            <label for="eventType">Type of Event:</label>
+            <select id="eventType" name="eventType" required>
+                <option value="" disabled selected>Select an event type</option>
+                <option value="wedding">Wedding</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="birthday">Birthday Party</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="date">Event Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" placeholder="Enter the number of guests" required>
+            
+            <label for="menu">Menu Preferences:</label>
+            <textarea id="menu" name="menu" rows="4" placeholder="Specify any menu preferences or dietary requirements"></textarea>
+            
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Add any special requests or notes"></textarea>
+            
+            <button type="submit">Submit Catering Request</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
